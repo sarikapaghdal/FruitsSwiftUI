@@ -9,6 +9,8 @@ import XCTest
 @testable import Fruits
 
 class FruitsTests: XCTestCase {
+    var fruits : [Fruit] = fruitsData
+    
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -19,6 +21,9 @@ class FruitsTests: XCTestCase {
     }
 
     func testFruitsData() throws {
-        XCTAssert(fruitsData.count != 0)
+        XCTAssert(fruits.count != 0)
+        XCTAssert(fruits.count == 13)
+        
+        
     }
 }

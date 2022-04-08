@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import SwiftUI
 @testable import Fruits
 
 class FruitsTests: XCTestCase {
@@ -22,5 +23,9 @@ class FruitsTests: XCTestCase {
     func testFruitsData() throws {
         XCTAssert(fruits.count != 0)
         XCTAssert(fruits.count == 13)
+        
+        for i in 0..<fruits.count {
+            XCTAssertNotNil(fruits[i])
+        }
     }
 }

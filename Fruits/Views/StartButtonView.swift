@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PaddingManager
 
 struct StartButtonView: View {
     
@@ -23,8 +24,9 @@ struct StartButtonView: View {
                     .imageScale(.large)
             }
         }//: BUTTON
-        .padding(.horizontal, 16)
-        .padding(.vertical, 10)
+       // .padding(.horizontal, 16)
+        //.padding(.vertical, 10)
+        .padding(vertical: 10, horizontal: 16)
         .accentColor(.white)
         .background(Capsule().strokeBorder(.white, lineWidth: 1.25))
     }

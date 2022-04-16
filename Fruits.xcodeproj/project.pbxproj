@@ -27,6 +27,7 @@
 		6E8F7E3127FEE4AF0030A092 /* FruitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8F7E3027FEE4AF0030A092 /* FruitsTests.swift */; };
 		6E8F7E3E27FF3E010030A092 /* FruitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8F7E3D27FF3E010030A092 /* FruitsUITests.swift */; };
 		6E8F7E4027FF3E010030A092 /* FruitsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8F7E3F27FF3E010030A092 /* FruitsUITestsLaunchTests.swift */; };
+		6EFD542B280AD2BF00D0C9A2 /* PaddingManager in Frameworks */ = {isa = PBXBuildFile; productRef = 6EFD542A280AD2BF00D0C9A2 /* PaddingManager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EFD542B280AD2BF00D0C9A2 /* PaddingManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +216,9 @@
 			dependencies = (
 			);
 			name = Fruits;
+			packageProductDependencies = (
+				6EFD542A280AD2BF00D0C9A2 /* PaddingManager */,
+			);
 			productName = Fruits;
 			productReference = 6E2BAF8F27E4F78300E7BBDC /* Fruits.app */;
 			productType = "com.apple.product-type.application";
@@ -286,6 +291,9 @@
 				Base,
 			);
 			mainGroup = 6E2BAF8627E4F78300E7BBDC;
+			packageReferences = (
+				6EFD5429280AD2BF00D0C9A2 /* XCRemoteSwiftPackageReference "PaddingManager" */,
+			);
 			productRefGroup = 6E2BAF9027E4F78300E7BBDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -669,6 +677,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6EFD5429280AD2BF00D0C9A2 /* XCRemoteSwiftPackageReference "PaddingManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sarikapaghdal/PaddingManager.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6EFD542A280AD2BF00D0C9A2 /* PaddingManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6EFD5429280AD2BF00D0C9A2 /* XCRemoteSwiftPackageReference "PaddingManager" */;
+			productName = PaddingManager;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6E2BAF8727E4F78300E7BBDC /* Project object */;
 }

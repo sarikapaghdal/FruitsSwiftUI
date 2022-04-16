@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PaddingManager
 
 struct FruitsDetailView: View {
     var fruit : Fruit
@@ -42,8 +43,8 @@ struct FruitsDetailView: View {
                         
                         //LINK
                         SourceLinkView()
-                            .padding(.top, 10)
-                            .padding(.bottom, 40)
+                            .padding(top: 10, bottom: 40)
+                        
                     }
                     .padding(.horizontal, 20)
                     .frame(maxWidth: 640, alignment: .center)

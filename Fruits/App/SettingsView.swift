@@ -68,13 +68,10 @@ struct SettingsView: View {
                         label:
                             SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
                           ) {
-                              SettingsRowView(name: "Developer", content: "John / Jane")
-                              
-                              SettingsRowView(name: "Designer", content: "Robert Petras")
-                              SettingsRowView(name: "Compatibilityy", content: "ios 14")
-                              SettingsRowView(name: "Website", linkLabel: "SWiftUI masterclass", linkDestination: "swiftuimasterclass.com")
-                              SettingsRowView(name: "Twitter", linkLabel: "@RobertPetras", linkDestination: "twitter.com/robertpetras")
-                              SettingsRowView(name: "SwiftUI", content: "2.0")
+                              SettingsRowView(name: "Developer", content: "Sarika")
+                              SettingsRowView(name: "Designer", content: "Sarika")
+                              SettingsRowView(name: "Compatibility", content: "ios 15.2")
+                              SettingsRowView(name: "SwiftUI", content: "3.0")
                               SettingsRowView(name: "Version", content: "1.1.0")
                             }//: BOX
                 }//: VSTACK
